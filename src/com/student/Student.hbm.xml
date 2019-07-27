@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.student.Student" table="Student">
+
+		<id name="roll" type="int" column="Roll">
+			<generator class="assigned" />
+		</id>
+
+		<property name="name" type="string">
+			<column name="NAME" length="20" not-null="true" unique="true" />
+		</property>
+		
+
+	</class>
+</hibernate-mapping>
